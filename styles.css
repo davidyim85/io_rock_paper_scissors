@@ -1,0 +1,37 @@
+
+body{
+    /* background-color: hotpink; */
+    /*center everythign */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /*body has a default margin lets remove that*/
+    margin: 0;
+}
+
+/*we need to update the buttons so that it looks like the one on the mockup*/
+
+button{
+    border-radius: 50%; /*makes the border radius 50% for a commplete circle the height width should be equal*/
+    border: 1px solid grey; /*applies a 1pixel border that is solid and grey in color*/
+    height: 100px; /* makes the button's height 100pixels */
+    width: 100px;  /* makes the button's width 100pixels */
+    font-size: 30px; /* makes the button's text (which are the emojis) 30pixels */
+    background-color: transparent; /* makes the button's background color transparent*/
+    /* margin: 10px; //add a 10pixel margin around the button for spacing */
+    cursor: pointer; /* give the button a pointer*/
+}
+
+div{
+   display: flex; /*flex box*/
+   gap: 20px; /*puts in a gap of 20 pixels for the children in each*/
+
+}
+
+/*hovering over the button will darken the border*/
+button:hover{
+    border: 1px solid black;
+}
